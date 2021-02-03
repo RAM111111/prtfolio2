@@ -376,4 +376,52 @@ position: relative;
     z-index: -1;
 }
 
+.form-button button{
+    border: 1px solid #e7d31f;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 32px;
+    outline: none;
+    color: #e7d31f;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+}
+ .fff:hover .form-button button{
+    color: white;
+    background: #e7d31f;
+    box-shadow: 0 0 20px 0 rgba(0,0,0, 0.2);
+}
+.form-button button:hover{
+    color: white;
+}
+
+::placeholder{
+    font-size: 0.8rem;
+    color:rgb(216, 216, 216)!important;
+}
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+
+}
+
+.news-input{
+    border-radius: 100px 0 0 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color: white!important;
+    background: #e7d31f!important;
+    border-radius: 0px 100px 100px 0px!important;
+    min-width: 120px;
+    min-height: 45px;
+}
+
 /*  */
