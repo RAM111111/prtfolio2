@@ -446,7 +446,46 @@
 
   </section>
 
+<!--  -->
 
+<footer class="footer" id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12 footer-div">
+      <div class="">
+        <h3 class=" text-white">About Ramia Aloufi</h3>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur
+           adipisicing elit. Officiis deleniti quidem 
+           esse exercitationem in unde!</p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-12 footer-div">
+      <div class="">
+        <h3 class="text-center text-white">follow me</h3>
+        <div class="d-flex justify-content-center">
+          <a href="#"><i class="fa-2x fab fa-github-square"></i></a>
+          <a href="#"><i class="fa-2x fab fa-linkedin"></i></a>
+          <a href="#"><i class="fa-2x fab fa-behance-square"></i></a>
+         
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+  <div class="mt-5 text-center text-white">
+    <p>copyright ©2021 All right reserved | this made by <a href="#">Ramia Aloufi</a></p>
+  </div>
+
+  <div class="scrollTop float-right">
+    <i class="fa fa-arrow-up" onclick="topfunc()" id="mybtn"></i>
+
+  </div>
+</div>
+</footer>
 
 
 <!-- popper library -->
@@ -473,6 +512,22 @@
       delay:100,
       time:3000
     })
+
+    mybtn = document.getElementById("mybtn");
+    window.onscroll = function(){scrollfunction()};
+
+    function scrollfunction(){
+      if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        mybtn.style.display = "block";
+      }else{
+        mybtn.style.display = "none";
+      }
+      
+    }
+    function topfunc(){
+      document.body.scrollTop = 0;//for safari
+      document.documentElement.scrollTop = 0//other browser
+    }
   </script>
 
 </body>
